@@ -14,7 +14,7 @@
    </form>
 
 <?php
-if ($SERVER['REQUEST_METHOD'] == 'POST') if(isset($_POST['verificar+-='])) {
+if ($SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['verificar+-='])) {
     $numero = $POST['numero+-='];
     if ($numero > 0) {
         echo "O número $numero é positivo.";
@@ -25,5 +25,6 @@ if ($SERVER['REQUEST_METHOD'] == 'POST') if(isset($_POST['verificar+-='])) {
     }
 }
 ?>
+
 </body>
 </html>
